@@ -75,3 +75,11 @@ std::cout << "The sum of " << v1;
 			<< " and " << v2;
 			<< " is " << v1 + v2 << std::endl;
 ```
+
+这里有错误。在使用"<<"的时候，前面需要有操作对象。
+
+改为下面这样即可。
+
+```
+std::cout << "The sum of " << v1	<< " and " << v2	<< " is " << v1 + v2 << std::endl;
+```
