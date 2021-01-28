@@ -1,5 +1,5 @@
 
-# C++ Primer 5ed
+# C++ Primer 5th ed
 
 ### Compilers recommended
 * Windows: Visual Studio 2019
@@ -83,3 +83,4 @@ std::cout << "The sum of " << v1;
 ```
 std::cout << "The sum of " << v1	<< " and " << v2	<< " is " << v1 + v2 << std::endl;
 ```
+
