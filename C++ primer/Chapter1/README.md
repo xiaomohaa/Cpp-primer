@@ -403,7 +403,38 @@ void ex1_11()
 }
 ```
 
-### 
+### Exercise 1.20
+* http://www.informit.com/title/032174113 contains a copy of Sales_item.h in the Chapter 1 code directory. Copy that file to your working directory. Use it to write a program that reads a set of book sales transactions, writing each transaction to the standard output.
+
+在本题测试案例中，由于头文件中的类定义原因，在输入变量的时候请按照以下格式输入。
+> ISBN 数量 单价  
+
+输出结果为：
+> ISBN 数量 总价 单价
+
+```
+#include <iostream>
+#include "../Include/Sales_item.h"
+
+using namespace std;
+
+int main()
+{
+	Sales_item item;
+
+	while (cin >> item)
+		cout << item << endl;
+	
+	return 0;
+}
+```
+
+
+### Exercise 1.21
+* Write a program that reads two Sales_item objects that have the same ISBN and produces their sum.
+
+### Exercise 1.22
+* Write a program that reads several transactions for the same ISBN. Write the sum of all the transactions that were read.
 
 
 
