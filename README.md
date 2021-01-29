@@ -5,7 +5,7 @@
 * Windows: Visual Studio 2019
 
 ### Others
-我维护这个仓库的时候借鉴了https://github.com/Mooophy/Cpp-Primer，但并不是完全抄袭，大多都会按照自己的思路来进行。
+我维护这个仓库的时候借鉴了[高星项目](https://github.com/Mooophy/Cpp-Primer)，但并不是完全抄袭，大多都会按照自己的思路来进行。
 
 ### Contents
 * [Chapter 1. Getting Started](https://github.com/xiaomohaa/Cpp-primer/blob/main/C%2B%2B%20primer/Chapter1/README.md)
