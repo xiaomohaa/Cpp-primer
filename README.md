@@ -112,5 +112,15 @@ std::cout << /* "*/" /* "/*" */;
 * After you’ve predicted what will happen, test your answers by compiling a program with each of these statements. Correct any errors you encounter.
 
 ```
+#include <iostream>
 
+int main(void)
+{
+	std::cout << "/*";					// 打印 /*
+	std::cout << "*/";					// 打印 */
+///	std::cout << /* "*/" */;			// 报错！因为 /* "*/ 将前一个双引号给注释掉了
+	std::cout << /* "*/" /* "/*" */;	// 打印 /* 
+	
+	return 0;
+}
 ```
