@@ -481,12 +481,26 @@ int main()
 }
 ```
 
+### Exercise 1.23
+* Write a program that reads several transactions and counts how many transactions occur for each ISBN.
 
+```
 
+```
 
+### Exercise 1.24
+* Test the previous program by giving multiple transactions representing multiple ISBNs. The records for each ISBN should be grouped together.
 
+```
 
+```
 
+### Exercise 1.25
+* Using the Sales_item.h header from the Web site, compile and execute the bookstore program presented in this section.
+
+```
+
+```
 
 
 
