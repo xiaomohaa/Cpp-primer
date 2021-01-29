@@ -143,8 +143,8 @@ int main()
 	
 	return 0;
 }
-```
- 
+``` 
+
 ### Exercise 1.10
 * In addition to the ++ operator that adds 1 to its operand, there is a decrement operator (--) that subtracts 1. Use the decrement operator to write a while that prints the numbers from ten down to zero.
 
@@ -199,6 +199,29 @@ int main()
 	return 0;
 }
 ```
+
+### Exercise 1.12
+* What does the following for loop do? What is the final valueof sum?
+
+```
+int sum = 0;
+for (int i = -100; i <= 100; ++i)
+sum += i;
+```
+
+计算-100到100之间所有整数和，最终结果是0.
+
+### Exercise 1.13
+* Rewrite the exercises from § 1.4.1 (p. 13) using for loops.
+
+
+
+### Exercise 1.14
+* Compare and contrast the loops that used a for with those using a while. Are there advantages or disadvantages to using either form?
+
+
+### Exercise 1.15
+* Write programs that contain the common errors discussed in the box on page 16. Familiarize yourself with the messages the compiler generates.
 
 
 
