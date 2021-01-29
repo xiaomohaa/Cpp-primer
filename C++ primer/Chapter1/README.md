@@ -1,4 +1,4 @@
-# Chapter 1.Getting Started
+## Chapter 1.Getting Started
 
 ### Exercise 1.3
 * Write a program to print Hello, World on the standard output.
