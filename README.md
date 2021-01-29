@@ -5,7 +5,7 @@
 * Windows: Visual Studio 2019
 
 ### Contents
-* [Chapter 1.Getting Started](https://github.com/xiaomohaa/Cpp-primer/blob/main/C%2B%2B%20primer/Chapter1/README.md)
+* [Chapter 1. Getting Started](https://github.com/xiaomohaa/Cpp-primer/blob/main/C%2B%2B%20primer/Chapter1/README.md)
 * Part I: The Basics
     * [Chapter 2. Variables and Basic Types]()
     * [Chapter 3. Strings, Vectors, and Arrays]()
