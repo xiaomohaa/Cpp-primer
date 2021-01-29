@@ -344,19 +344,64 @@ int main()
 * What happens in the program presented in this section if the input values are all equal? What if there are no duplicated values?
 
 如果输入的值都是相等的，会输出最高数值一共输入了多少次。  
-如果没有重复的值，只会输出一个新行。
+如果没有重复的值,在按下Enter之后，会输出除最后一个输入数值之外的所有数据，并且每个数值单独一行。
 
 ### Exercise 1.18
 * Compile and run the program from this section giving it only equal values as input. Run it again giving it values in which no number is repeated.
 
+```
+#include <iostream>
 
+int main()
+{
+	int currVal = 0, val = 0;
+	
+	if (std::cin >> currVal)
+	{
+		int cnt = 1; 
+		while (std::cin >> val) 
+		{ 
+			if (val == currVal) 
+				++cnt; 
+			else 
+			{ 
+				std::cout << currVal << " occurs " << cnt << " times" << std::endl;
+				currVal = val; 
+				cnt = 1;
+			}
+		}
+		std::cout << currVal << " occurs " << cnt << " times" << std::endl;
+	}
+	return 0;
+}
+```
 
 ### Exercise 1.19
 * Revise the program you wrote for the exercises in § 1.4.1 (p.13) that printed a range of numbers so that it handles input in which the first number is smaller than the second.
 
+由于我当时在写那个题目的时候已经考虑最高问题。就直接把code放过来了。  
+只需要加一个if判断语句，在第一个数小于第二个数的时候，将两个数值交换即可。
 
-
-
+```
+void ex1_11()
+{
+	int val = 0, num = 0;
+	cout << "请输入两个整数：";
+	cin >> val >> num;
+	if(val < num)
+	{
+		int temp = num;
+		num = val;
+		val = temp;
+	}
+	cout << val << "到" << num << "之间的整数有：";
+	for( ; val >= num; val--)
+	{
+		cout << val << ' ';
+	}
+	cout << endl;
+}
+```
 
 
 
