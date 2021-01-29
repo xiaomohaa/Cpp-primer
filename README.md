@@ -1,7 +1,7 @@
 
 # C++ Primer 5th ed
 
-### ±àÒëÆ÷
+### Compilers recommended
 * Windows: Visual Studio 2019
 
 ### Contents
