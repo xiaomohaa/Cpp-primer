@@ -259,9 +259,90 @@ void ex1_11()
 ### Exercise 1.14
 * Compare and contrast the loops that used a for with those using a while. Are there advantages or disadvantages to using either form?
 
+[这里借鉴一个相似的问题](https://stackoverflow.com/questions/2950931/for-vs-while-in-c-programming)
 
 ### Exercise 1.15
 * Write programs that contain the common errors discussed in the box on page 16. Familiarize yourself with the messages the compiler generates.
+
+```
+// error: missing ) in parameter list for main
+int main ( 
+{
+	// error: used colon, not a semicolon, after endl
+	std::cout << "Read each file." << std::endl:
+	// error: missing quotes around string literal
+	std::cout << Update master. << std::endl;
+	// error: second output operator is missing
+	std::cout << "Write new master." std::endl;
+	// error: missing ; on return statement
+	return 0
+}
+```
+
+```
+#include <iostream>
+int main()
+{
+	int v1 = 0, v2 = 0;
+	std::cin >> v >> v2; // error: uses "v" not "v1"
+	// error: cout not defined; should be std::cout
+	cout << v1 + v2 << std::endl;
+	return 0;
+}
+```
+
+### Exercise 1.16
+* Write your own version of a program that prints the sum of a set of integers read from cin.
+
+> 注意：本例的程序需要手动输入文件结束符。
+> * windows 操作系统输入 Ctrl+Z
+> * MAC OS X 和 UNIX 系统输入 Ctrl+D
+
+while实现
+```
+#include <iostream>
+
+int main()
+{
+	int result = 0, num = 0;
+	std::cout << "请输入一些整数：";
+	while (std::cin >> num)
+	{
+		result += num;
+	}
+
+	std::cout << std::endl << "相加的结果是：" << result << std::endl;
+	
+	return 0;
+}
+```
+
+for实现
+```
+#include <iostream>
+
+int main()
+{
+	int result = 0, num = 0;
+	std::cout << "请输入一些整数：";
+	
+	//while (std::cin >> num)
+	//{
+	//	result += num;
+	//}
+
+	for (; std::cin >> num; )
+		result += num;
+
+	std::cout << std::endl << "相加的结果是：" << result << std::endl;
+	
+	return 0;
+}
+```
+
+
+
+
 
 
 
