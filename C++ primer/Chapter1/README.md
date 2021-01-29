@@ -433,8 +433,39 @@ int main()
 ### Exercise 1.21
 * Write a program that reads two Sales_item objects that have the same ISBN and produces their sum.
 
+```
+#include <iostream>
+#include "../Include/Sales_item.h"
+
+using namespace std;
+
+int main()
+{
+	Sales_item item1, item2;
+
+	// 输入两个对象内容
+	cin >> item1 >> item2;
+
+	cout << item1 + item2 << endl;
+	
+	return 0;
+}
+```
+
 ### Exercise 1.22
 * Write a program that reads several transactions for the same ISBN. Write the sum of all the transactions that were read.
+
+```
+
+```
+
+
+
+
+
+
+
+
 
 
 
