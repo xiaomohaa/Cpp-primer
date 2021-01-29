@@ -1,10 +1,4 @@
-
-# C++ Primer 5th ed
-
-### Compilers recommended
-* Windows: Visual Studio 2019
-
-## Chapter 1.Getting Started
+# Chapter 1.Getting Started
 
 ### Exercise 1.3
 * Write a program to print Hello, World on the standard output.
@@ -266,7 +260,6 @@ void ex1_11()
 
 ### Exercise 1.14
 * Compare and contrast the loops that used a for with those using a while. Are there advantages or disadvantages to using either form?
-
 
 
 ### Exercise 1.15
