@@ -84,3 +84,33 @@ std::cout << "The sum of " << v1;
 std::cout << "The sum of " << v1	<< " and " << v2	<< " is " << v1 + v2 << std::endl;
 ```
 
+### Exercise 1.7
+
+* Compile a program that has incorrectly nested comments.
+
+如果我们按照以下的方式写注释会怎样
+```
+/*
+ *	这一部分是正常的注释内容
+ *	一旦在里面嵌套   /**/   之后的内容都被认为是代码
+ */
+
+/*
+ * 但是在中间嵌套 // 还是正确的，不影响注释内容
+ */
+```
+
+### Exercise 1.8
+* Indicate which, if any, of the following output statements are legal:
+
+```
+std::cout << "/*";
+std::cout << "*/";
+std::cout << /* "*/" */;
+std::cout << /* "*/" /* "/*" */;
+```
+* After you’ve predicted what will happen, test your answers by compiling a program with each of these statements. Correct any errors you encounter.
+
+```
+
+```
