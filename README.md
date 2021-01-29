@@ -148,5 +148,23 @@ int main()
 ### Exercise 1.10
 * In addition to the ++ operator that adds 1 to its operand, there is a decrement operator (--) that subtracts 1. Use the decrement operator to write a while that prints the numbers from ten down to zero.
 
+```
+#include <iostream>
+
+int main()
+{
+	int val = 10;
+	
+	while (val >= 0)
+	{
+		std::cout << val << ' ';
+		val--;
+	}
+	std::cout << std::endl;
+	
+	return 0;
+}
+```
+
 ### Exercise 1.11
 * Write a program that prompts the user for two integers.Print each number in the range specified by those two integers.
