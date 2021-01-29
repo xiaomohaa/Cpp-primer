@@ -340,7 +340,19 @@ int main()
 }
 ```
 
+### Exercise 1.17
+* What happens in the program presented in this section if the input values are all equal? What if there are no duplicated values?
 
+如果输入的值都是相等的，会输出最高数值一共输入了多少次。  
+如果没有重复的值，只会输出一个新行。
+
+### Exercise 1.18
+* Compile and run the program from this section giving it only equal values as input. Run it again giving it values in which no number is repeated.
+
+
+
+### Exercise 1.19
+* Revise the program you wrote for the exercises in § 1.4.1 (p.13) that printed a range of numbers so that it handles input in which the first number is smaller than the second.
 
 
 
