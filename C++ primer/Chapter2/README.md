@@ -56,7 +56,64 @@ std::cout << u - i << std::endl;
 ### Exercise 2.4
 * Write a program to check whether your predictions were correct. If not, study this section until you understand what the problem is.
 
+```
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+	unsigned u = 10, u2 = 42;
+	std::cout << u2 - u << std::endl;
+	std::cout << u - u2 << std::endl;
+	int i = 10, i2 = 42;
+	std::cout << i2 - i << std::endl;
+	std::cout << i - i2 << std::endl;
+	std::cout << i - u << std::endl;
+	std::cout << u - i << std::endl;
+	
+	return 0;
+}
+```
+
+### Exercise 2.5
+* Determine the type of each of the following literals. Explain the differences among the literals in each of the four examples:
+> (a) 'a', L'a', "a", L"a"  
+> (b) 10, 10u, 10L, 10uL, 012, 0xC  
+> (c) 3.14, 3.14f, 3.14L  
+> (d) 10, 10u, 10., 10e-2  
+
+(a) 字符a，宽字符a，字符串a，宽字符串a
+(b) int型10，unsigned int型10，long型10，unsigned long型10，八进制10，十六进制10
+(c) double型3.14，float型3.14，long double型3.14
+(d) int型10，unsigned int型10，double型10.0，double型0.1
+
+### Exercise 2.6
+* What, if any, are the differences between the following definitions:
+```
+int month = 9, day = 7;
+int month = 09, day = 07;
+```
+
+因为以0开头的整数代表八进制数。  
+所以第一行定义的month和day都是十进制的。  
+第二行定义的month是会报错的，因为9是八进制中无效的数字，然而day的定义是有效的，定义为八进制的07.
+
+### Exercise 2.7
+* What values do these literals represent? What type does each have?
+> (a) "Who goes with F\145rgus?\012"  
+> (b) 3.14e1L  
+> (c) 1024f  
+> (d) 3.14L
+
+在(a)中，存在转义字符'\'，在第一个转义字符为‘\145’，对应ASCII中的‘e’，第二个转义字符‘\012’,对应ASCII中的换行。
+(a) "Who goes with Fergus?（换行）"
+(b) long double 型的31.4
+(c) 因为1024不是浮点型数据，会报错。
+
+
+### Exercise 2.8
+* Using escape sequences, write a program to print 2M followed by a newline. Modify the program to print 2, then a tab, then an M, followed by a newline.
 
 
 
