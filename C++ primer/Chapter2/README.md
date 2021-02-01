@@ -238,11 +238,49 @@ std::cout << i << " " << sum << std::endl;
 
 当退出for循环之后，将访问该作用域范围下的i = 100.
 
+### Exercise 2.15
+* Which of the following definitions, if any, are invalid? Why?
+
+> (a) int ival = 1.01;  
+> (b) int &rval1 = 1.01;  
+> (c) int &rval2 = ival;  
+> (d) int &rval3;  
+
+(a) 合法  
+(b) 不合法。引用类型的初始值必须是对象  
+(c) 合法  
+(d) 不合法。引用必须初始化  
+
+### Exercise 2.16
+* Which, if any, of the following assignments are invalid? If they are valid, explain what they do.
+
+```
+int i = 0, &r1 = i;
+double d = 0, &r2 = d;  
+```
+
+> (a) r2 = 3.14159;  
+> (b) r2 = r1;  
+> (c) i = r2;  
+> (d) r1 = d;  
+
+(a) 合法。把3.14159赋值给d  
+(b) 合法。把i的值赋给d，会发生类型自动转换  
+(c) 合法。把d的值赋给i，但是仅仅保留整数部分  
+(d) 合法。把d的值赋给i，但是仅仅保留整数部分
+
+### Exercise 2.17
+* What does the following code print?
+
+```
+int i, &ri = i;
+i = 5; ri = 10;
+std::cout << i << " " << ri << std::endl;
+```
+
+`i = 10`  `ri = 10`
+
 ### 
-
-
-
-
 
 
 
