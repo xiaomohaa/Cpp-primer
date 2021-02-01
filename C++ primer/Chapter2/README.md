@@ -106,10 +106,10 @@ int month = 09, day = 07;
 > (c) 1024f  
 > (d) 3.14L
 
-在(a)中，存在转义字符'\'，在第一个转义字符为‘\145’，对应ASCII中的‘e’，第二个转义字符‘\012’,对应ASCII中的换行。
-(a) "Who goes with Fergus?（换行）"
-(b) long double 型的31.4
-(c) 因为1024不是浮点型数据，会报错。
+在(a)中，存在转义字符'\'，在第一个转义字符为‘\145’，对应ASCII中的‘e’，第二个转义字符‘\012’,对应ASCII中的换行。  
+(a) "Who goes with Fergus?（换行）"  
+(b) long double 型的31.4  
+(c) 因为1024不是浮点型数据，会报错。  
 (d) long double型3.14
 
 ### Exercise 2.8
