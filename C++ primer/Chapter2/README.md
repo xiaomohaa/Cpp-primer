@@ -182,16 +182,63 @@ int main()
 }
 ```
 
+### Exercise 2.11
+* Explain whether each of the following is a declaration or a definition:
 
+> (a) extern int ix = 1024;  
+> (b) int iy;  
+> (c) extern int iz;
 
+(a) 定义
+(b) 定义
+(c) 声明
 
+### Exercise 2.12
+* Which, if any, of the following names are invalid?
 
+> (a) int double = 3.14;  
+> (b) int _;  
+> (c) int catch-22;  
+> (d) int 1_or_2 = 1;  
+> (e) double Double = 3.14;
 
+(a) 不能使用C++ 关键字
+(b) 可以使用。
+(c) 标识符只能使用字母、数字和下划线组成
+(d) 不能使用C++ 操作符替代名
+(e) 可以使用。
 
+### Exercise 2.13
+* What is the value of j in the following program?
 
+```
+int i = 42;
+int main()
+{
+	int i = 100;
+	int j = i;
+}
+```
 
+在main函数里，重新定义了一个局部变量i，会覆盖全局变量i，此时j的值是100。
 
+### Exercise 2.14
+* Is the following program legal? If so, what values are printed?
 
+```
+int i = 100, sum = 0;
+for (int i = 0; i != 10; ++i)
+	sum += i;
+std::cout << i << " " << sum << std::endl;
+```
+
+这个程序是正确的。
+
+虽然先定义了一个i并且初始化为100，但是在for循环中，重新定义的i会覆盖掉之前的i，所以在for循环中，i的值从0开始，计算0到10的累加值，最终结果是sun = 45。
+
+当退出for循环之后，将访问该作用域范围下的i = 100.
+
+### 
 
 
 
