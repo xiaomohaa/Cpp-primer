@@ -83,9 +83,9 @@ int main()
 > (c) 3.14, 3.14f, 3.14L  
 > (d) 10, 10u, 10., 10e-2  
 
-(a) 字符a，宽字符a，字符串a，宽字符串a
-(b) int型10，unsigned int型10，long型10，unsigned long型10，八进制10，十六进制10
-(c) double型3.14，float型3.14，long double型3.14
+(a) 字符a，宽字符a，字符串a，宽字符串a  
+(b) int型10，unsigned int型10，long型10，unsigned long型10，八进制10，十六进制10  
+(c) double型3.14，float型3.14，long double型3.14  
 (d) int型10，unsigned int型10，double型10.0，double型0.1
 
 ### Exercise 2.6
@@ -129,6 +129,8 @@ int main()
 	return 0;
 }
 ```
+
+### 
 
 
 
