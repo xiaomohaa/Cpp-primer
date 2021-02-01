@@ -130,7 +130,58 @@ int main()
 }
 ```
 
-### 
+### Exercise 2.9
+* Explain the following definitions. For those that are illegal, explain what’s wrong and how to correct it.
+> (a) std::cin >> int input_value;  
+> (b) int i = { 3.14 };  
+> (c) double salary = wage = 9999.99;  
+> (d) int i = 3.14;
+
+(a) 应该先声明变量input_value，然后读取cin数据  
+(b) 在初始化int型变量i的时候，会将double型数据缩小为int，这是不合法的。可以将变量i声明为double类型。  
+(c) 如果之前没有声明变量wage程序将报错。这条语句的意思是先将9999.99赋值给变量wage，然后再声明一个double型变量salary，再将wage的值赋给变量salary。  
+(d) 是一条正确的语句，但是i的值只能保留3.14的整数部分。  
+
+### Exercise 2.10
+* What are the initial values, if any, of each of the following variables?
+
+```
+std::string global_str;
+int global_int;
+int main()
+{
+	int local_int;
+	std::string local_str;
+}
+```
+
+* global_str是全局字符串变量，所以初始值为空字符串。
+* global_int是全局整型变量，因此初始值为0。
+* local_int是局部整型变量，局部整型变量需要初始化，如果没有初始化，程序会报错！
+* local_str是局部字符串变量，初始值为空字符串。
+
+具体可以在程序中验证。
+
+```
+#include <iostream>
+
+std::string global_str;
+int global_int;
+
+int main()
+{
+	int local_int = 0;
+	std::string local_str;
+
+	std::cout << global_str << std::endl;
+	std::cout << global_int << std::endl;
+	std::cout << local_int << std::endl;
+	std::cout << local_str << std::endl;
+	
+	return 0;
+}
+```
+
 
 
 
