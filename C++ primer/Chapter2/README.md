@@ -110,11 +110,25 @@ int month = 09, day = 07;
 (a) "Who goes with Fergus?（换行）"
 (b) long double 型的31.4
 (c) 因为1024不是浮点型数据，会报错。
-
+(d) long double型3.14
 
 ### Exercise 2.8
 * Using escape sequences, write a program to print 2M followed by a newline. Modify the program to print 2, then a tab, then an M, followed by a newline.
 
+需要查找ASCII表来寻找转义符序号。
+```
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << 2 << "\115\012";
+	cout << 2 << "\011" << "\115" << "\012";
+	
+	return 0;
+}
+```
 
 
 
