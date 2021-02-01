@@ -8,9 +8,9 @@
 我维护这个仓库的时候借鉴了[Cpp-Primer](https://github.com/Mooophy/Cpp-Primer)，但并不是完全抄袭，大多都会按照自己的思路来进行。
 
 ### Contents
-* [Chapter 1. Getting Started](https://github.com/xiaomohaa/Cpp-primer/blob/main/C%2B%2B%20primer/Chapter1/README.md)
+* [Chapter 1. Getting Started](https://github.com/xiaomohaa/Cpp-primer/blob/main/C%2B%2B%20primer/Chapter1/)
 * Part I: The Basics
-    * [Chapter 2. Variables and Basic Types](https://github.com/xiaomohaa/Cpp-primer/blob/main/C%2B%2B%20primer/Chapter2/README.md)
+    * [Chapter 2. Variables and Basic Types](https://github.com/xiaomohaa/Cpp-primer/blob/main/C%2B%2B%20primer/Chapter2/)
     * [Chapter 3. Strings, Vectors, and Arrays]()
     * [Chapter 4. Expressions]()
     * [Chapter 5. Statements]()
